@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setting</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="setting.css" />
+</head>
+<body>
+  <main class="app">
+    <h3 class="app__title">setting</h3>
+
+    <input
+      type="number"
+      id="timerInput"
+      class="setting-input"
+      min="1"
+      max="60"
+      oninput="handleInputChange()"
+    />
+
+    <button
+      type="button"
+      id="saveButton"
+      class="control-button control-button--start"
+      onclick="saveTimerSetting()"
+    >
+      저장
+    </button>
+  </main>
+
+  <script src="setting.js"></script>
+</body>
+</html>

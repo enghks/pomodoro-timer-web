@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pomodoro</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <main class="app">
+    <h1 class="app__title">pomodoro</h1>
+
+    <div class="timer">
+      <span class="timer__time" id="timerDisplay">25:00</span>
+    </div>
+
+    <div class="controls">
+      <button type="button" class="control-button control-button--start" id="startButton" onclick="startTimer()">시작</button>
+      <button type="button" class="control-button control-button--stop" id="stopButton" onclick="stopTimer()">정지</button>
+      <button type="button" class="control-button control-button--reset" id="resetButton" onclick="resetTimer()">초기화</button>
+    </div>
+
+    <button type="button" class="settings-button" aria-label="설정" onclick="location.href='setting.html'">
+      <svg class="settings-button__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M19.14 12.94a7.14 7.14 0 0 0 .05-.94 7.14 7.14 0 0 0-.05-.94l2.03-1.58a.5.5 0 0 0 .12-.64l-1.92-3.32a.5.5 0 0 0-.6-.22l-2.39.96a7.03 7.03 0 0 0-1.62-.94l-.36-2.54a.5.5 0 0 0-.5-.42h-3.84a.5.5 0 0 0-.5.42l-.36 2.54c-.59.24-1.13.56-1.62.94l-2.39-.96a.5.5 0 0 0-.6.22L2.71 8.84a.5.5 0 0 0 .12.64l2.03 1.58a7.14 7.14 0 0 0 0 1.88l-2.03 1.58a.5.5 0 0 0-.12.64l1.92 3.32c.14.24.42.32.6.22l2.39-.96c.49.38 1.03.7 1.62.94l.36 2.54c.05.24.26.42.5.42h3.84c.24 0 .45-.18.5-.42l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.24.1.46.02.6-.22l1.92-3.32a.5.5 0 0 0-.12-.64l-2.03-1.58ZM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" fill="currentColor"/>
+      </svg>
+      <span class="settings-button__label">설정</span>
+    </button>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
