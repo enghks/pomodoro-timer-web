@@ -63,5 +63,18 @@ function resetTimer() {
   updateDisplay();
 }
 
+const clockDisplay = document.getElementById("clockDisplay");
+
+function updateClock() {
+  const now = new Date();
+  const hours = String(now.getHours()).padStart(2, "0");
+  const minutes = String(now.getMinutes()).padStart(2, "0");
+  const seconds = String(now.getSeconds()).padStart(2, "0");
+  clockDisplay.textContent = hours + ":" + minutes + ":" + seconds;
+  clockDisplay.dateTime = now.toISOString();
+}
+
 stopButton.disabled = true;
 updateDisplay();
+updateClock();
+setInterval(updateClock, 1000);

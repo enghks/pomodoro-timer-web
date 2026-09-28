@@ -45,6 +45,14 @@ body {
   color: var(--color-primary);
 }
 
+.clock {
+  margin-top: -24px;
+  font-size: 16px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+}
+
 .timer {
   width: 220px;
   height: 220px;
